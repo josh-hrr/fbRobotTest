@@ -28,20 +28,20 @@ I should be able to access "Facebook" page
     input text          //*[@id="email"]    test@hotmail.com
     input text          //*[@id="pass"]     test
     sleep               3s
-    click link          //a[contains(text(),'¿Has olvidado la contraseña?')]
+    #click link          //a[contains(text(),'¿Has olvidado la contraseña?')]
     #press keys          //*[@id="pass"]     RETURN
     Testing custom lib
     sleep               10s
     go to               https://www.facebook.com/photo/?fbid=415056120653915&set=a.415056107320583
     sleep               10s
 
-    #FOR    ${i}     IN RANGE     5
-    #Log     ${i}
-    #Click Element       //*[@class='xi81zsa xo1l8bm xlyipyv xuxw1ft x49crj4 x1ed109x xdl72j9 x1iyjqo2 xs83m0k x6prxxf x6ikm8r x10wlt62 x1y1aw1k xn6708d xwib8y2 x1ye3gou']
-    #press keys          //*[@class='xi81zsa xo1l8bm xlyipyv xuxw1ft x49crj4 x1ed109x xdl72j9 x1iyjqo2 xs83m0k x6prxxf x6ikm8r x10wlt62 x1y1aw1k xn6708d xwib8y2 x1ye3gou']      comment # ${i}
-    #sleep               2s
-    #press keys          //*[@class='x1ed109x xdl72j9 x1iyjqo2 xs83m0k x6prxxf x6ikm8r x10wlt62 x1y1aw1k xn6708d xwib8y2 x1ye3gou']      RETURN
-    #END
+    FOR    ${i}     IN RANGE     5
+    Log     ${i}
+    Click Element       //*[@class='xi81zsa xo1l8bm xlyipyv xuxw1ft x49crj4 x1ed109x xdl72j9 x1iyjqo2 xs83m0k x6prxxf x6ikm8r x10wlt62 x1y1aw1k xn6708d xwib8y2 x1ye3gou']
+    press keys          //*[@class='xi81zsa xo1l8bm xlyipyv xuxw1ft x49crj4 x1ed109x xdl72j9 x1iyjqo2 xs83m0k x6prxxf x6ikm8r x10wlt62 x1y1aw1k xn6708d xwib8y2 x1ye3gou']      comment # ${i}
+    sleep               2s
+    press keys          //*[@class='x1ed109x xdl72j9 x1iyjqo2 xs83m0k x6prxxf x6ikm8r x10wlt62 x1y1aw1k xn6708d xwib8y2 x1ye3gou']      RETURN
+    END
 
     sleep               2s
     #press keys          //*[@class='x1ed109x xdl72j9 x1iyjqo2 xs83m0k x6prxxf x6ikm8r x10wlt62 x1y1aw1k xn6708d xwib8y2 x1ye3gou']      RETURN
